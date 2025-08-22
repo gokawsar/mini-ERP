@@ -59,7 +59,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/gokawsare/mini-erp.git](https://github.com/gokawsar/mini-erp.git)
+    git clone [https://github.com/gokawsar/mini-ERP.git](https://github.com/gokawsar/mini-ERP.git)
     cd mini-erp
     ```
 2.  **Database Setup**
@@ -122,4 +122,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-Project Link: [https://github.com/your-username/mini-erp](https://github.com/your-username/mini-erp)
+Project Link: [https://github.com/gokawsar/mini-ERP](https://github.com/gokawsar/mini-ERP)
