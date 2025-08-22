@@ -11,6 +11,8 @@ This project was developed as a database lab project, focusing on robust schema 
 
 ## 🌟 Features
 
+<img width="3840" height="1737" alt="er_diagram_con" src="https://github.com/user-attachments/assets/205ba32c-f3d8-4025-91c4-1c709f03eb0d" />
+
 * **Integrated Client Management**: Comprehensive profiles for all clients, linked to sales and job processes.
 * **Dynamic Inventory Control**: Manage items with unit prices, stock quantities, and reorder levels, preventing stockouts.
 * **Full Sales Workflow (Quote-to-Cash)**: Seamless flow from:
@@ -19,11 +21,8 @@ This project was developed as a database lab project, focusing on robust schema 
     * **Bills/Invoicing**: Generate final invoices from delivery slips and track payment statuses.
 * **Project/Job Tracking**: Manage specific jobs for clients with status updates.
 * **Comprehensive Reporting Suite**: Access various pre-defined reports, including:
-    * Total Sales, Top Selling Items (by quantity/revenue)
-    * Revenue by Client and Item Category
+    * Total Sales and Clients
     * Quotation Conversion Rate
-    * Average Order Value
-    * Monthly Sales Trend
     * Pending Bills by Client
     * Low Stock Alerts
     * Job Status Summaries
@@ -43,8 +42,8 @@ This project was developed as a database lab project, focusing on robust schema 
 
 The Mini-ERP system is built upon a normalized relational database schema designed for efficiency and integrity. Below is a conceptual overview of the main entities and their relationships.
 
+![er_diagram_i](https://github.com/user-attachments/assets/a9e0cc49-40f2-4e3e-8a1e-54de1f402e3e)
 
-*(A detailed ER Diagram image would be placed here, illustrating tables like `clients`, `items`, `users`, `quotations`, `quotation_items`, `delivery_slips`, `delivery_slip_items`, `bills`, `jobs`, `job_progress`, `taxes`, `reports`, and `report_items`.)*
 
 ## 🚀 Installation & Setup
 
@@ -60,32 +59,21 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/your-username/mini-erp.git](https://github.com/your-username/mini-erp.git)
+    git clone [https://github.com/gokawsare/mini-erp.git](https://github.com/gokawsar/mini-erp.git)
     cd mini-erp
     ```
 2.  **Database Setup**
     * Open your MySQL client (e.g., phpMyAdmin, MySQL Workbench).
     * Create a new database named `dbms`.
-    * Import the provided SQL schema (`schema.sql` or similar file, which contains table creation and default `taxes` data). You can usually do this by running the SQL script.
-        ```sql
-        -- Example of commands you might run
-        CREATE DATABASE dbms;
-        USE dbms;
-        -- Then, copy-paste the SQL schema provided in the project report
-        -- from the "DROP TABLE IF EXISTS..." to the "INSERT INTO taxes..." part.
-        ```
-    * *Self-correction*: Ensure that the schema includes user creation for testing. If not, you might need to manually create a user for initial login:
-        ```sql
-        INSERT INTO users (username, password, email, role) VALUES ('admin', '$2y$10$w4rB.X.Y.Z.A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.X.Y.Z.', 'admin@example.com', 'admin');
-        -- Replace the hash with a real hashed password for 'admin' (e.g., use password_hash('password123', PASSWORD_DEFAULT) in PHP)
-        -- The hash above is a placeholder; use a real one from PHP for security.
-        ```
+    * Import the provided SQL schema (`dbms.sql`). You can usually do this by running the SQL script.
+    
 3.  **Place Files on Web Server**
     * Move the `mini-erp` project folder into your web server's document root (e.g., `htdocs` for XAMPP, `www` for WAMP).
     * Update database connection details in relevant PHP files (e.g., `config.php` if you create one, or directly in `sidebar.php` and other modules where `$conn` is initialized) if your MySQL host, username, or password are not `localhost`, `root`, and `''` respectively.
+      
 4.  **Access the Application**
     * Open your web browser and navigate to `http://localhost/mini-erp/users/login.php` to access the login page.
-    * You can create a new account via the registration form or log in with any pre-seeded user (e.g., the `admin` user you might have created).
+    * You can create a new account via the registration form.
 
 ## 💡 Usage
 
