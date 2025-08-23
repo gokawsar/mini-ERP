@@ -1,6 +1,6 @@
 # 🚀 Mini-ERP System
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/your-username/mini-erp)](https://github.com/your-username/mini-erp/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/gokawsar/mini-erp)](https://github.com/gokawsar/mini-erp/commits/main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## ✨ Overview
